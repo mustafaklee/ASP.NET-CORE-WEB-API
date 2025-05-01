@@ -12,15 +12,10 @@ namespace MyFirstApiProject.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
     public class RegionsController : ControllerBase
     {
-        //methodları asenkron hale getirmek icin async deyimi ve metodların dönüş tipini Task<> deyimi icine almaliyiz.
 
-
-        //dbContext'i enjekte edelim.
         private readonly NZWalksDbContext dbContext;
-        //Region repository'i enjekte edelim.
         private readonly IRegionRepository regionRepository;
         private readonly IMapper mapper;
         public RegionsController(NZWalksDbContext _dbContext,IRegionRepository regionRepository,IMapper mapper)
@@ -29,11 +24,11 @@ namespace MyFirstApiProject.Controllers
             this.dbContext = _dbContext;
             this.regionRepository = regionRepository;
         }
-        //dbContext'i enjekte ettik.
 
         //GET ALL REGIONS
         //GET: https:///localhost:portnumber//api/regions
         [HttpGet]
+        [Authorize(Roles ="Reader")]
         public async Task<IActionResult> GetAllRegions()
         {
             // asenkron olmayan method var regions = dbContext.Regions.ToList();
@@ -56,6 +51,7 @@ namespace MyFirstApiProject.Controllers
         //GET SINGLE REGION
         //GET: https://localhost:portnumber/api/regions/{id}
         [HttpGet("{id:Guid}")]
+        [Authorize(Roles = "Reader")]
         public async Task<IActionResult> GetByIdRegions([FromRoute] Guid id)
         {
             // asenkron olmayan işlem var regions = dbContext.Regions.FirstOrDefault(m => m.Id == id);
@@ -74,6 +70,7 @@ namespace MyFirstApiProject.Controllers
         //CREATE SINGLE REGION
         //POST: https:localhost:portnumber/api/regions
         [HttpPost]
+        [Authorize(Roles = "Writer")]
         public async Task<IActionResult> CreateRegion([FromBody] RegionRequestDto regionRequestDto)
         {
             //automapper
@@ -91,6 +88,7 @@ namespace MyFirstApiProject.Controllers
         //UPDATE SINGLE REGION
         //PUT: https:localhost:portnumber/api/regions/{id}
         [HttpPut("{id:Guid}")]
+        [Authorize(Roles = "Writer")]
         public async Task<IActionResult> UpdateRegion([FromRoute] Guid id, [FromBody] UpdateRegionDto updateRegionDto)
         {
             var regionDomainModel = mapper.Map<Region>(updateRegionDto);
@@ -113,6 +111,7 @@ namespace MyFirstApiProject.Controllers
         //DELETE SINGLE REGION
         //DELETE: https:localhost:portnumber/api/regions/{id}
         [HttpDelete("{id:Guid}")]
+        [Authorize(Roles = "Writer")]
         public async Task<IActionResult> DeleteRegion([FromRoute] Guid id)
         {
             var regionDomainModel = await regionRepository.DeleteRegionAsync(id);

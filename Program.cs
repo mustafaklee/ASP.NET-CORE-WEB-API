@@ -39,6 +39,9 @@ builder.Services.AddScoped<IWalkRepository, SqlWalkRepositories>();
 //bu satır farklı bir veritabanına geildiği seneryoda 2.repo olarak değişim kolaylığını gstermek için oluşturulmuştur.
 //builder.Services.AddScoped<IRegionRepository, InMemoryRegionRepository>();
 
+builder.Services.AddScoped<ITokenRepository, TokenRepository>();
+
+
 //AutoMapper i programa enjekte etmemiz gerekiyor.
 builder.Services.AddAutoMapper(typeof(AutoMapperProfiles));
 
