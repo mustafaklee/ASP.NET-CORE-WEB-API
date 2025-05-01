@@ -8,12 +8,17 @@ using System.Text;
 using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
 using MyFirstApiProject.Data;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.FileProviders;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllers();
+builder.Services.AddHttpContextAccessor();
+
+
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -40,7 +45,7 @@ builder.Services.AddScoped<IWalkRepository, SqlWalkRepositories>();
 //builder.Services.AddScoped<IRegionRepository, InMemoryRegionRepository>();
 
 builder.Services.AddScoped<ITokenRepository, TokenRepository>();
-
+builder.Services.AddScoped<IImageRepository, LocalImageRepository>();
 
 //AutoMapper i programa enjekte etmemiz gerekiyor.
 builder.Services.AddAutoMapper(typeof(AutoMapperProfiles));
@@ -89,7 +94,11 @@ app.UseHttpsRedirection();
 
 app.UseAuthentication();
 app.UseAuthorization();
-
+app.UseStaticFiles(new StaticFileOptions
+{
+    FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(),"Images")),
+    RequestPath = "/Images"
+});
 app.MapControllers();
 
 app.Run();
