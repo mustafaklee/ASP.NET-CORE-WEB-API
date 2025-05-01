@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "MyFirstApiProject.Controllers.AuthController",
+    "Method": "Register",
+    "RelativePath": "api/Auth/Register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "registerRequestDto",
+        "Type": "MyFirstApiProject.Models.DTO.RegisterRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "MyFirstApiProject.Controllers.RegionsController",
     "Method": "GetAllRegions",
     "RelativePath": "api/Regions",

@@ -1,7 +1,13 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using MyFirstApiProject.Mappings;
 using MyFirstApiProject.Repositories;
 using MyFirstApiProjects.Data;
+using System.Text;
+using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
+using MyFirstApiProject.Data;
+using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,19 +18,59 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-//dependency ýnjection // baðýmlýlýk enjeksiyonu
+//dependency injection // baÄŸÄ±mlÄ±lÄ±k enjeksiyonu
 builder.Services.AddDbContext<NZWalksDbContext>(options => 
-options.UseSqlServer(builder.Configuration.GetConnectionString("NZWalksDbContext")));
+    options.UseMySql(
+        builder.Configuration.GetConnectionString("NZWalksDbContext"),
+        new MySqlServerVersion(new Version(8, 0, 0))
+));
 
-//repository pattern'i kullanmak icin ýnject etmemiz gerekiyor. 
-//bu satýr ile IRegionRepository interface'ini ve SqlRegionRepositories class'ýný enjekte eder.
+builder.Services.AddDbContext<NZWalksAuthDbContext>(options =>
+    options.UseMySql(
+        builder.Configuration.GetConnectionString("NZWalksAuthDbContext"),
+        new MySqlServerVersion(new Version(8, 0, 0))
+));
+
+
+//repository pattern'i kullanmak icin inject etmemiz gerekiyor. 
+//bu satÄ±r ile IRegionRepository interface'ni ve SqlRegionRepositories class'Ä±nÄ± enjekte eder.
 builder.Services.AddScoped<IRegionRepository, SqlRegionRepositories>();
 builder.Services.AddScoped<IWalkRepository, SqlWalkRepositories>();
-//bu satýr farklý bir veritabanýna geçildiði seneryoda 2.repo olarak deðiþim kolaylýðýný göstermek için oluþturulmuþtur.
+//bu satÄ±r farklÄ± bir veritabanÄ±na geildiÄŸi seneryoda 2.repo olarak deÄŸiÅŸim kolaylÄ±ÄŸÄ±nÄ± gstermek iÃ§in oluÅŸturulmuÅŸtur.
 //builder.Services.AddScoped<IRegionRepository, InMemoryRegionRepository>();
 
 //AutoMapper i programa enjekte etmemiz gerekiyor.
 builder.Services.AddAutoMapper(typeof(AutoMapperProfiles));
+
+
+//guvenlik ayarlarÄ±
+builder.Services.AddIdentityCore<IdentityUser>()
+    .AddRoles<IdentityRole>()
+    .AddEntityFrameworkStores<NZWalksAuthDbContext>()
+    .AddTokenProvider<DataProtectorTokenProvider<IdentityUser>>("NZWalks")
+    .AddDefaultTokenProviders();
+
+builder.Services.Configure<IdentityOptions>(options =>
+{
+    options.Password.RequireDigit = false;
+    options.Password.RequireLowercase = false;
+    options.Password.RequireNonAlphanumeric = false;
+    options.Password.RequireUppercase = false;
+    options.Password.RequiredLength = 6;
+    options.Password.RequiredUniqueChars = 1;
+});
+
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options => options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidateLifetime = true,
+        ValidateIssuerSigningKey = true,
+        ValidIssuer = builder.Configuration["Jwt:Issuer"],
+        ValidAudience = builder.Configuration["Jwt:Audience"],
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
+    });
 
 
 var app = builder.Build();
@@ -38,6 +84,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

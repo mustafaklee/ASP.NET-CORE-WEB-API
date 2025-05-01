@@ -1,38 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\musta\\source\\repos\\MyFirstApiProject\\",
+  "WorkspaceRootPath": "C:\\Users\\musta\\source\\repos\\ASP.NET-CORE-WEB-API-Beta-Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D77B2498-AFB8-4BC5-A55D-517C8D30D9D1}|MyFirstApiProject.csproj|c:\\users\\musta\\source\\repos\\myfirstapiproject\\data\\nzwalksdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D77B2498-AFB8-4BC5-A55D-517C8D30D9D1}|MyFirstApiProject.csproj|solutionrelative:data\\nzwalksdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D77B2498-AFB8-4BC5-A55D-517C8D30D9D1}|MyFirstApiProject.csproj|c:\\users\\musta\\source\\repos\\asp.net-core-web-api-beta-project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D77B2498-AFB8-4BC5-A55D-517C8D30D9D1}|MyFirstApiProject.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D77B2498-AFB8-4BC5-A55D-517C8D30D9D1}|MyFirstApiProject.csproj|c:\\users\\musta\\source\\repos\\myfirstapiproject\\mappings\\automapperprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D77B2498-AFB8-4BC5-A55D-517C8D30D9D1}|MyFirstApiProject.csproj|solutionrelative:mappings\\automapperprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D77B2498-AFB8-4BC5-A55D-517C8D30D9D1}|MyFirstApiProject.csproj|c:\\users\\musta\\source\\repos\\asp.net-core-web-api-beta-project\\models\\dto\\registerrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D77B2498-AFB8-4BC5-A55D-517C8D30D9D1}|MyFirstApiProject.csproj|solutionrelative:models\\dto\\registerrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D77B2498-AFB8-4BC5-A55D-517C8D30D9D1}|MyFirstApiProject.csproj|c:\\users\\musta\\source\\repos\\myfirstapiproject\\repositories\\sqlwalkrepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D77B2498-AFB8-4BC5-A55D-517C8D30D9D1}|MyFirstApiProject.csproj|solutionrelative:repositories\\sqlwalkrepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D77B2498-AFB8-4BC5-A55D-517C8D30D9D1}|MyFirstApiProject.csproj|c:\\users\\musta\\source\\repos\\asp.net-core-web-api-beta-project\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D77B2498-AFB8-4BC5-A55D-517C8D30D9D1}|MyFirstApiProject.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D77B2498-AFB8-4BC5-A55D-517C8D30D9D1}|MyFirstApiProject.csproj|c:\\users\\musta\\source\\repos\\myfirstapiproject\\models\\domain\\walk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D77B2498-AFB8-4BC5-A55D-517C8D30D9D1}|MyFirstApiProject.csproj|solutionrelative:models\\domain\\walk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D77B2498-AFB8-4BC5-A55D-517C8D30D9D1}|MyFirstApiProject.csproj|c:\\users\\musta\\source\\repos\\myfirstapiproject\\models\\dto\\walkdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D77B2498-AFB8-4BC5-A55D-517C8D30D9D1}|MyFirstApiProject.csproj|solutionrelative:models\\dto\\walkdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D77B2498-AFB8-4BC5-A55D-517C8D30D9D1}|MyFirstApiProject.csproj|c:\\users\\musta\\source\\repos\\myfirstapiproject\\controllers\\walkscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D77B2498-AFB8-4BC5-A55D-517C8D30D9D1}|MyFirstApiProject.csproj|solutionrelative:controllers\\walkscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D77B2498-AFB8-4BC5-A55D-517C8D30D9D1}|MyFirstApiProject.csproj|c:\\users\\musta\\source\\repos\\myfirstapiproject\\models\\domain\\difficulty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D77B2498-AFB8-4BC5-A55D-517C8D30D9D1}|MyFirstApiProject.csproj|solutionrelative:models\\domain\\difficulty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D77B2498-AFB8-4BC5-A55D-517C8D30D9D1}|MyFirstApiProject.csproj|c:\\users\\musta\\source\\repos\\myfirstapiproject\\models\\domain\\region.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D77B2498-AFB8-4BC5-A55D-517C8D30D9D1}|MyFirstApiProject.csproj|solutionrelative:models\\domain\\region.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D77B2498-AFB8-4BC5-A55D-517C8D30D9D1}|MyFirstApiProject.csproj|c:\\users\\musta\\source\\repos\\asp.net-core-web-api-beta-project\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D77B2498-AFB8-4BC5-A55D-517C8D30D9D1}|MyFirstApiProject.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,110 +26,71 @@
       "DocumentGroups": [
         {
           "DockedHeight": 240,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "NZWalksDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\musta\\source\\repos\\MyFirstApiProject\\Data\\NZWalksDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\NZWalksDbContext.cs",
-              "ToolTip": "C:\\Users\\musta\\source\\repos\\MyFirstApiProject\\Data\\NZWalksDbContext.cs",
-              "RelativeToolTip": "Data\\NZWalksDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T02:03:54.943Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Region.cs",
-              "DocumentMoniker": "C:\\Users\\musta\\source\\repos\\MyFirstApiProject\\Models\\Domain\\Region.cs",
-              "RelativeDocumentMoniker": "Models\\Domain\\Region.cs",
-              "ToolTip": "C:\\Users\\musta\\source\\repos\\MyFirstApiProject\\Models\\Domain\\Region.cs",
-              "RelativeToolTip": "Models\\Domain\\Region.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T01:59:50.072Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Difficulty.cs",
-              "DocumentMoniker": "C:\\Users\\musta\\source\\repos\\MyFirstApiProject\\Models\\Domain\\Difficulty.cs",
-              "RelativeDocumentMoniker": "Models\\Domain\\Difficulty.cs",
-              "ToolTip": "C:\\Users\\musta\\source\\repos\\MyFirstApiProject\\Models\\Domain\\Difficulty.cs",
-              "RelativeToolTip": "Models\\Domain\\Difficulty.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T01:59:48.878Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "WalksController.cs",
-              "DocumentMoniker": "C:\\Users\\musta\\source\\repos\\MyFirstApiProject\\Controllers\\WalksController.cs",
-              "RelativeDocumentMoniker": "Controllers\\WalksController.cs",
-              "ToolTip": "C:\\Users\\musta\\source\\repos\\MyFirstApiProject\\Controllers\\WalksController.cs",
-              "RelativeToolTip": "Controllers\\WalksController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwCQAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T00:52:55.629Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AutoMapperProfiles.cs",
-              "DocumentMoniker": "C:\\Users\\musta\\source\\repos\\MyFirstApiProject\\Mappings\\AutoMapperProfiles.cs",
-              "RelativeDocumentMoniker": "Mappings\\AutoMapperProfiles.cs",
-              "ToolTip": "C:\\Users\\musta\\source\\repos\\MyFirstApiProject\\Mappings\\AutoMapperProfiles.cs",
-              "RelativeToolTip": "Mappings\\AutoMapperProfiles.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAuwAsAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T01:54:01.727Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "SqlWalkRepositories.cs",
-              "DocumentMoniker": "C:\\Users\\musta\\source\\repos\\MyFirstApiProject\\Repositories\\SqlWalkRepositories.cs",
-              "RelativeDocumentMoniker": "Repositories\\SqlWalkRepositories.cs",
-              "ToolTip": "C:\\Users\\musta\\source\\repos\\MyFirstApiProject\\Repositories\\SqlWalkRepositories.cs",
-              "RelativeToolTip": "Repositories\\SqlWalkRepositories.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAA6AAAAAAAAAA==",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\musta\\source\\repos\\ASP.NET-CORE-WEB-API-Beta-Project\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\musta\\source\\repos\\ASP.NET-CORE-WEB-API-Beta-Project\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-30T23:31:22.686Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RegisterRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\musta\\source\\repos\\ASP.NET-CORE-WEB-API-Beta-Project\\Models\\DTO\\RegisterRequestDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTO\\RegisterRequestDto.cs",
+              "ToolTip": "C:\\Users\\musta\\source\\repos\\ASP.NET-CORE-WEB-API-Beta-Project\\Models\\DTO\\RegisterRequestDto.cs",
+              "RelativeToolTip": "Models\\DTO\\RegisterRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T01:51:19.09Z",
+              "WhenOpened": "2025-04-30T23:17:54.545Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Walk.cs",
-              "DocumentMoniker": "C:\\Users\\musta\\source\\repos\\MyFirstApiProject\\Models\\Domain\\Walk.cs",
-              "RelativeDocumentMoniker": "Models\\Domain\\Walk.cs",
-              "ToolTip": "C:\\Users\\musta\\source\\repos\\MyFirstApiProject\\Models\\Domain\\Walk.cs",
-              "RelativeToolTip": "Models\\Domain\\Walk.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAuwAoAAAAAAAAAAAAAAA==",
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\musta\\source\\repos\\ASP.NET-CORE-WEB-API-Beta-Project\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\musta\\source\\repos\\ASP.NET-CORE-WEB-API-Beta-Project\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAADwvyUAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T01:48:47.969Z"
+              "WhenOpened": "2025-04-30T23:16:15.087Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "WalkDto.cs",
-              "DocumentMoniker": "C:\\Users\\musta\\source\\repos\\MyFirstApiProject\\Models\\DTO\\WalkDto.cs",
-              "RelativeDocumentMoniker": "Models\\DTO\\WalkDto.cs",
-              "ToolTip": "C:\\Users\\musta\\source\\repos\\MyFirstApiProject\\Models\\DTO\\WalkDto.cs",
-              "RelativeToolTip": "Models\\DTO\\WalkDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAuAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\musta\\source\\repos\\ASP.NET-CORE-WEB-API-Beta-Project\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\musta\\source\\repos\\ASP.NET-CORE-WEB-API-Beta-Project\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAAwDIAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T01:48:41.212Z"
+              "WhenOpened": "2025-04-30T21:59:20.66Z",
+              "EditorCaption": ""
             }
           ]
         }

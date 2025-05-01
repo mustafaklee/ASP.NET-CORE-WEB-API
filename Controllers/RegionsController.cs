@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Identity.Client;
 using MyFirstApiProject.Models.DTO;
 using MyFirstApiProject.Repositories;
 using MyFirstApiProjects.Data;
@@ -12,6 +12,7 @@ namespace MyFirstApiProject.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class RegionsController : ControllerBase
     {
         //methodları asenkron hale getirmek icin async deyimi ve metodların dönüş tipini Task<> deyimi icine almaliyiz.
